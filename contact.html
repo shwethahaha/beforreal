@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Be For Real</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'bfr-indigo': '#2D1C7F', 'bfr-wisteria': '#B0A9E5', 'bfr-ink': '#0D0E20', 'bfr-milk': '#FFF3E6' }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>body { font-family: 'Inter', sans-serif; overflow-x: hidden; } .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out; } .fade-in.is-visible { opacity: 1; transform: translateY(0); }</style>
+</head>
+<body class="bg-bfr-milk text-bfr-ink selection:bg-bfr-wisteria selection:text-bfr-ink">
+
+    <nav class="sticky top-0 z-50 flex justify-between items-center py-5 px-6 md:px-12 bg-bfr-milk/80 backdrop-blur-md border-b border-bfr-indigo/10">
+        <a href="index.html" class="cursor-pointer block hover:opacity-80 transition-opacity">
+            <img src="newlogo.png" alt="Be For Real Logo" class="h-16 w-auto object-contain">
+        </a>
+        <div class="hidden md:flex gap-10 text-sm font-bold tracking-widest text-bfr-ink/80 uppercase">
+            <a href="about.html" class="hover:text-bfr-indigo transition-colors">About</a>
+            <a href="services.html" class="hover:text-bfr-indigo transition-colors">Services</a>
+            <a href="process.html" class="hover:text-bfr-indigo transition-colors">Process</a>
+            <a href="why-us.html" class="hover:text-bfr-indigo transition-colors">Why Us</a>
+            <a href="contact.html" class="hover:text-bfr-indigo transition-colors">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-bfr-indigo text-bfr-milk px-6 py-3 rounded-full text-sm font-bold hover:bg-bfr-wisteria hover:text-bfr-ink hover:scale-105 transition-all shadow-lg uppercase tracking-wide">
+            Start Your Journey
+        </a>
+    </nav>
+
+
+    <section class="py-24 px-6 md:px-12 max-w-[1400px] mx-auto">
+        <div class="fade-in text-center mb-20">
+            <h1 class="text-[3.5rem] md:text-[5.5rem] font-black tracking-tighter leading-[1] mb-8 text-bfr-indigo uppercase">
+                Stop Scrolling.<br>Start Building.
+            </h1>
+            <p class="text-xl md:text-2xl font-bold text-bfr-ink/80 max-w-4xl mx-auto leading-relaxed">
+                Your competitors are moving. Your audience is waiting. Tell us where you are and where you want to be. We'll handle everything in between.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            
+            <div class="space-y-8 fade-in">
+                <div class="bg-white p-8 rounded-2xl border-2 border-bfr-indigo shadow-[6px_6px_0px_#B0A9E5] hover:-translate-y-1 transition-transform">
+                    <h3 class="text-2xl font-black text-bfr-indigo mb-2 uppercase">Start a Project</h3>
+                    <p class="text-bfr-ink/80 font-medium">Have a brief or a big idea? Let's bring it to life. Drop us a message and we'll be in touch within 24 hours.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border-2 border-bfr-indigo shadow-[6px_6px_0px_#B0A9E5] hover:-translate-y-1 transition-transform">
+                    <h3 class="text-2xl font-black text-bfr-indigo mb-2 uppercase">Book a Strategy Call</h3>
+                    <p class="text-bfr-ink/80 font-medium">Not sure where to start? No problem. Book a free 30-minute strategy call and let's figure it out together.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border-2 border-bfr-indigo shadow-[6px_6px_0px_#B0A9E5] hover:-translate-y-1 transition-transform">
+                    <h3 class="text-2xl font-black text-bfr-indigo mb-2 uppercase">Just Say Hello</h3>
+                    <p class="text-bfr-ink/80 font-medium">Like what you see? Want to ask a question? We're real people. We actually reply.</p>
+                </div>
+                
+                <div class="pt-8">
+                    <p class="text-sm font-bold uppercase tracking-widest text-bfr-ink/50 mb-2">Direct Email</p>
+                    <a href="mailto:arjun@beforreal.com" class="text-2xl font-black text-bfr-indigo hover:text-bfr-wisteria transition-colors block">arjun@beforreal.com</a>
+                    <a href="mailto:shwetha@beforreal.com" class="text-2xl font-black text-bfr-indigo hover:text-bfr-wisteria transition-colors block mt-2">shwetha@beforreal.com</a>
+                </div>
+            </div>
+
+            <div class="fade-in delay-100 bg-bfr-indigo p-10 md:p-12 rounded-3xl text-bfr-milk shadow-[12px_12px_0px_#0D0E20] border-4 border-bfr-ink">
+                <h3 class="text-3xl font-black mb-8 uppercase text-bfr-wisteria">Let's Get Real.</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 text-bfr-milk/70">Name</label>
+                            <input type="text" placeholder="Your Name" class="w-full bg-bfr-ink/30 border-2 border-bfr-wisteria/30 rounded-xl px-4 py-3 text-bfr-milk focus:outline-none focus:border-bfr-wisteria focus:bg-bfr-ink/50 transition-all placeholder-bfr-milk/30">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 text-bfr-milk/70">Company</label>
+                            <input type="text" placeholder="Brand / Company" class="w-full bg-bfr-ink/30 border-2 border-bfr-wisteria/30 rounded-xl px-4 py-3 text-bfr-milk focus:outline-none focus:border-bfr-wisteria focus:bg-bfr-ink/50 transition-all placeholder-bfr-milk/30">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold uppercase tracking-widest mb-2 text-bfr-milk/70">Email</label>
+                        <input type="email" placeholder="you@example.com" class="w-full bg-bfr-ink/30 border-2 border-bfr-wisteria/30 rounded-xl px-4 py-3 text-bfr-milk focus:outline-none focus:border-bfr-wisteria focus:bg-bfr-ink/50 transition-all placeholder-bfr-milk/30">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold uppercase tracking-widest mb-2 text-bfr-milk/70">I'm Interested In</label>
+                        <select class="w-full bg-bfr-ink/30 border-2 border-bfr-wisteria/30 rounded-xl px-4 py-3 text-bfr-milk focus:outline-none focus:border-bfr-wisteria focus:bg-bfr-ink/50 transition-all appearance-none cursor-pointer">
+                            <option>Brand Identity & Strategy</option>
+                            <option>Growth & Performance Marketing</option>
+                            <option>Web Design & Development</option>
+                            <option>Social Media & Content</option>
+                            <option>Everything (0 to 100)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold uppercase tracking-widest mb-2 text-bfr-milk/70">Tell us about your project</label>
+                        <textarea rows="4" placeholder="What are you building?" class="w-full bg-bfr-ink/30 border-2 border-bfr-wisteria/30 rounded-xl px-4 py-3 text-bfr-milk focus:outline-none focus:border-bfr-wisteria focus:bg-bfr-ink/50 transition-all placeholder-bfr-milk/30"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-bfr-wisteria text-bfr-ink font-black uppercase tracking-wider py-4 rounded-xl hover:bg-bfr-milk hover:scale-[1.02] transition-all shadow-lg mt-4">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-bfr-ink text-bfr-milk py-12 mt-20 text-center border-t-4 border-bfr-wisteria">
+        <h2 class="text-[8vw] md:text-[4vw] font-black tracking-tighter leading-[0.8] text-bfr-milk/20 uppercase mb-8 cursor-default hover:text-bfr-wisteria transition-colors">BE FOR REAL</h2>
+        <div class="flex justify-center gap-8 text-sm font-bold uppercase tracking-widest text-bfr-milk/60">
+            <a href="mailto:arjun@beforreal.com" class="hover:text-bfr-wisteria">Email Us</a>
+            <a href="#" class="hover:text-bfr-wisteria">Instagram</a>
+            <a href="#" class="hover:text-bfr-wisteria">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); } }); }, { threshold: 0.1 });
+            document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

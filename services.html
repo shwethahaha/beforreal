@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Be For Real</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { 
+            theme: { 
+                extend: { 
+                    colors: { 
+                        'bfr-indigo': '#2D1C7F', 
+                        'bfr-wisteria': '#B0A9E5', 
+                        'bfr-ink': '#0D0E20', 
+                        'bfr-milk': '#FFF3E6' 
+                    }, 
+                    fontFamily: { sans: ['Inter', 'sans-serif'] } 
+                } 
+            } 
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s; }
+        .fade-in.is-visible { opacity: 1; transform: translateY(0); }
+        
+        /* Custom hover transition for the massive rows */
+        .service-row { transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+        .service-row:hover .service-num { color: transparent; -webkit-text-stroke: 2px currentColor; }
+    </style>
+</head>
+<body class="bg-bfr-milk text-bfr-ink selection:bg-bfr-wisteria selection:text-bfr-ink">
+
+    <nav class="sticky top-0 z-50 flex justify-between items-center py-5 px-6 md:px-12 bg-bfr-milk/80 backdrop-blur-md border-b border-bfr-indigo/10">
+        <a href="index.html" class="cursor-pointer block hover:opacity-80 transition-opacity">
+            <img src="newlogo.png" alt="Be For Real Logo" class="h-16 w-auto object-contain">
+        </a>
+        <div class="hidden md:flex gap-10 text-sm font-bold tracking-widest text-bfr-ink/80 uppercase">
+            <a href="about.html" class="hover:text-bfr-indigo transition-colors">About</a>
+            <a href="services.html" class="hover:text-bfr-indigo transition-colors">Services</a>
+            <a href="process.html" class="hover:text-bfr-indigo transition-colors">Process</a>
+            <a href="why-us.html" class="hover:text-bfr-indigo transition-colors">Why Us</a>
+            <a href="contact.html" class="hover:text-bfr-indigo transition-colors">Contact</a>
+        </div>
+        <a href="contact.html" class="bg-bfr-indigo text-bfr-milk px-6 py-3 rounded-full text-sm font-bold hover:bg-bfr-wisteria hover:text-bfr-ink hover:scale-105 transition-all shadow-lg uppercase tracking-wide">
+            Start Your Journey
+        </a>
+    </nav>
+
+
+    <section class="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto text-center">
+        <div class="fade-in">
+            <div class="text-sm font-bold uppercase tracking-widest text-bfr-wisteria mb-6 border-2 border-bfr-wisteria inline-block px-4 py-2 rounded-full">Page 03 / Our Arsenal</div>
+            <h1 class="text-[4rem] md:text-[7rem] font-black tracking-tighter leading-[0.9] mb-8 text-bfr-indigo uppercase">
+                13 Services.<br>1 Mission.
+            </h1>
+            <p class="text-xl md:text-3xl font-bold text-bfr-ink/80 leading-relaxed max-w-5xl mx-auto">
+                To take your brand from wherever it is right now to exactly where it needs to be. Because a great logo means nothing without a strategy, and strategy means nothing without fierce execution.
+            </p>
+        </div>
+    </section>
+
+    <section class="border-t-4 border-bfr-ink w-full">
+        
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-indigo hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">01</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Market Research</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Brand Building</div>
+                <p class="text-lg font-medium opacity-80">Know your market before you enter it. We dig deep into data, competitors, and consumers to give you the edge.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-wisteria hover:text-bfr-ink cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-indigo group-hover:text-bfr-ink">02</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Brand Strategy</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Brand Building</div>
+                <p class="text-lg font-medium opacity-80">Positioning, purpose, personality. We define the iron-clad foundation your brand is built on.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 bg-bfr-milk hover:bg-bfr-ink hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">03</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform text-bfr-indigo group-hover:text-bfr-milk">Brand Messaging</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Brand Building</div>
+                <p class="text-lg font-medium opacity-80 group-hover:text-bfr-milk/80">Your voice, your tone, your story. We craft the words that actually make people feel something.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-indigo hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">04</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Brand Identity</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Brand Building</div>
+                <p class="text-lg font-medium opacity-80">Logo, colour, typography, look & feel. We make your brand unmistakable on sight.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-wisteria hover:text-bfr-ink cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-indigo group-hover:text-bfr-ink">05</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Campaigns</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Growth & Marketing</div>
+                <p class="text-lg font-medium opacity-80">From concept to execution, we run integrated campaigns — paid, organic, OOH, digital — that are impossible to ignore.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-ink hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">06</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform text-bfr-indigo group-hover:text-bfr-milk">Go-To-Market</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Growth & Marketing</div>
+                <p class="text-lg font-medium opacity-80">Launching something new? We build the full GTM playbook — positioning, launch strategy, channel mix, and rollout plan.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-indigo hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">07</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Performance Ads</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Growth & Marketing</div>
+                <p class="text-lg font-medium opacity-80">Data-driven paid advertising across Meta, TikTok, Google & beyond. Every penny tracked. Every decision justified.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-wisteria hover:text-bfr-ink cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-indigo group-hover:text-bfr-ink">08</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Website Design</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Digital & Content</div>
+                <p class="text-lg font-medium opacity-80">Websites that don't just look stunning — they convert. Built around your brand, your audience, and your goals.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-ink hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">09</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform text-bfr-indigo group-hover:text-bfr-milk">Web Development</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Digital & Content</div>
+                <p class="text-lg font-medium opacity-80">Fast, responsive, and built to last. We develop digital experiences that perform flawlessly.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-indigo hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">10</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Content & SEO</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Digital & Content</div>
+                <p class="text-lg font-medium opacity-80">Content that ranks, resonates, and converts. We write for humans first and search engines second.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-wisteria hover:text-bfr-ink cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-indigo group-hover:text-bfr-ink">11</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Social & UGC</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Digital & Content</div>
+                <p class="text-lg font-medium opacity-80">We manage your channels, create scroll-stopping content, and build communities that actually show up — and buy.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-ink hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">12</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform text-bfr-indigo group-hover:text-bfr-milk">Communications</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Comms & Influence</div>
+                <p class="text-lg font-medium opacity-80">PR, media relations, and reputation management. We get your name in the right places and keep it there.</p>
+            </div>
+        </div>
+
+        <div class="service-row fade-in group border-b-4 border-bfr-ink px-6 md:px-12 py-10 hover:bg-bfr-indigo hover:text-bfr-milk cursor-default flex flex-col md:flex-row items-baseline justify-between gap-8">
+            <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12 w-full md:w-1/2">
+                <span class="service-num text-5xl md:text-7xl font-black text-bfr-wisteria group-hover:text-bfr-milk">13</span>
+                <h3 class="text-4xl md:text-6xl font-black uppercase tracking-tighter group-hover:translate-x-4 transition-transform">Influencers</h3>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="inline-block border-2 border-bfr-ink group-hover:border-bfr-milk rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">Comms & Influence</div>
+                <p class="text-lg font-medium opacity-80">We connect your brand with the voices your audience actually trusts. Authentic. Targeted. Effective.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contact-footer" class="bg-bfr-ink text-bfr-milk pt-24 pb-8 overflow-hidden">
+        <div class="px-6 md:px-12 max-w-[1600px] mx-auto">
+            <div class="fade-in flex flex-col items-center text-center mb-20">
+                <div class="text-sm font-bold uppercase tracking-widest text-bfr-wisteria mb-6">Get In Touch</div>
+                <h2 class="text-[3rem] md:text-[5rem] font-black tracking-tighter mb-6 text-bfr-milk">Stop Scrolling. Start Building.</h2>
+                <a href="contact.html" class="bg-bfr-wisteria text-bfr-ink px-10 py-5 rounded-xl text-xl font-black hover:bg-bfr-milk hover:scale-105 transition-all uppercase tracking-wider shadow-[6px_6px_0px_#2D1C7F]">Let's Talk</a>
+            </div>
+            <div class="fade-in delay-100 w-full text-center border-b-2 border-bfr-wisteria/30 pb-6 mb-8">
+                <h1 class="text-[12vw] font-black tracking-tighter leading-[0.8] text-bfr-milk hover:text-bfr-wisteria transition-colors duration-500 uppercase [text-shadow:6px_6px_0px_#2D1C7F]">BE FOR REAL</h1>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-sm font-bold uppercase tracking-widest">
+                <div class="flex flex-col md:flex-row gap-4 text-bfr-wisteria">
+                    <a href="mailto:arjun@beforreal.com" class="hover:text-bfr-milk transition-colors">arjun@beforreal.com</a>
+                    <a href="mailto:shwetha@beforreal.com" class="hover:text-bfr-milk transition-colors">shwetha@beforreal.com</a>
+                </div>
+                <div class="flex gap-4 md:gap-8 text-bfr-milk/60 text-xs">
+                    <span>Marketing</span>
+                    <span>Branding</span>
+                    <span>Digital</span>
+                    <span>PR</span>
+                    <span>Influence</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); observer.unobserve(e.target); } });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
